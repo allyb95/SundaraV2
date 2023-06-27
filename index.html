@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sundara Karma</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+   
+
+
+
+
+
+
+  
+    
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 class="signup2">Sign Up To Our Mailing List</h2>
+    <form id="signupForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <input type="submit" value="Sign Up">
+    </form>
+  </div>
+</div>
+
+
+
+<script>
+window.addEventListener("load", function() {
+  setTimeout(function() {
+    document.getElementById("myModal").style.display = "block";
+  }, 2000);
+});
+
+document.getElementsByClassName("close")[0].addEventListener("click", function() {
+  document.getElementById("myModal").style.display = "none";
+});
+
+document.getElementById("signupForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent form submission
+  // Handle form submission here (e.g., send data to server)
+  alert("Sign up successful!");
+  document.getElementById("myModal").style.display = "none";
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<section class="section3img">
+
+
+    <img src="img/SL LOGO LOWREZ2.png" alt="" class="headlogo">
+
+    <img class="fomaw"   src="img/friends of mine (single artwork).jpeg" alt="">
+
+
+    <h1 class="outnow">Friends of Mine</h1>
+    <h1 class="outnow2">OUT NOW</h1>
+    </div>
+
+    <a href="https://open.spotify.com/artist/4fgXfJCQnK6c44u4KzAtQP" class="button-57" role="button">
+        <span class="text">Listen</span>
+        <span>Friends of Mine</span>
+      </a>
+
+</section>
+
+
+<script>
+
+const section = document.querySelector('.section3img');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+      section.style.opacity = '1'; 
+    } else {
+      section.style.opacity = '0'; 
+    }
+  });
+}, {
+  threshold: 0.5 
+});
+
+
+observer.observe(section);
+
+
+</script>
+
+
+<script>const headLogo = document.querySelector('.headlogo');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY >= 20) {
+        headLogo.style.transform = 'translate(0, 0)';
+      } else {
+        headLogo.style.transform = 'none';
+      }
+    });</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<section class="tour-section">
+    <div class="tour-container">
+      
+        <div id="seated-55fdf2c0" data-artist-id="93990b4d-0a95-40ee-892f-bf69631b3bdf" data-css-version="3"></div>
+        <h3>More Shows coming  very soon...</h3>
+    </div>
+
+        <div class="contact_div">
+        <h3 class="contact_h2">TE•AM MANAGEMENT</h3>
+        <p class="contact_p">TERRY@TE-ARTISTMANAGEMENT.COM
+        </div>
+
+</section>
+
+
+  <script src="https://widget.seated.com/app.js"></script>
+
+
+
+
+  <script>
+    const tourSection = document.querySelector('.tour-section');
+  
+    const observer1 = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+          tourSection.style.opacity = '1';
+        } else {
+          tourSection.style.opacity = '0';
+        }
+      });
+    }, {
+      threshold: 0.5
+    });
+  
+    observer1.observe(tourSection);
+  </script>
+  
+
+
+<script>
+    const section2 = document.querySelector('.section2');
+  
+    const observer2 = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+          section2.style.opacity = '1';
+        } else {
+          section2.style.opacity = '0';
+        }
+      });
+    }, {
+      threshold: 0.5
+    });
+  
+    observer2.observe(section2);
+  </script>
+
+
+
+
+  
+
+<footer>
+    <div class="socials">
+      <a href="https://www.facebook.com/your-facebook-page-url">
+        <img src="img/fb.webp" alt="">
+      </a>
+      <a href="https://www.instagram.com/sundarakarma/?hl=en">
+        <img src="img/ig.webp" alt="">
+      </a>
+      <a href="https://twitter.com/your-twitter-profile-url">
+        <img src="img/twit.webp" alt="">
+      </a>
+      <a href="https://www.youtube.com/your-youtube-channel-url">
+        <img src="img/yt.webp" alt="">
+      </a>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+</body>
+</html>
